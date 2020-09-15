@@ -1,10 +1,10 @@
 Name:                openhpi
 Version:             3.8.0
-Release:             7
+Release:             8
 Summary:             Implementation of the Service Availability Forum's Hardware Platform Interface
 License:             BSD
 URL:                 http://www.openhpi.org
-Source0:             http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
+Source0:             https://github.com/open-hpi/%{name}/releases/download/%{version}/%{name}-%{version}.tar.gz
 Patch0:              openhpi-3.4.0-systemd.patch
 Patch1:              openhpi-3.6.1-ssl.patch
 
@@ -111,5 +111,8 @@ make check
 %{_mandir}/man8/*8*
 
 %changelog
+* Tue Sep 15 2020 Ge Wang <wangge20@huawei.com> - 3.8.0-7
+- Modify Source0 Url
+
 * Tue Nov 26 2019 openEuler Buildteam <buildteam@openeuler.org> - 3.8.0-6
 - Package init
