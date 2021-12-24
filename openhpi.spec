@@ -1,6 +1,6 @@
 Name:                openhpi
 Version:             3.8.0
-Release:             8
+Release:             9
 Summary:             Implementation of the Service Availability Forum's Hardware Platform Interface
 License:             BSD
 URL:                 http://www.openhpi.org
@@ -80,7 +80,7 @@ make check
 %systemd_preun openhpid.service
 
 %postun
-%systemd_postun_with_restart service
+%systemd_postun_with_restart openhpid.service
 
 %files
 %defattr(-,root,root)
@@ -111,6 +111,9 @@ make check
 %{_mandir}/man8/*8*
 
 %changelog
+* Wed Dec 22 2021 liyanan <liyanan32@huawei.com> - 3.8.0-9
+- fix update error
+
 * Tue Sep 15 2020 Ge Wang <wangge20@huawei.com> - 3.8.0-7
 - Modify Source0 Url
 
