@@ -1,8 +1,8 @@
 Name:                openhpi
 Version:             3.8.0
-Release:             8
+Release:             9
 Summary:             Implementation of the Service Availability Forum's Hardware Platform Interface
-License:             BSD
+License:             BSD-3-Clause
 URL:                 http://www.openhpi.org
 Source0:             https://github.com/open-hpi/%{name}/releases/download/%{version}/%{name}-%{version}.tar.gz
 Patch0:              openhpi-3.4.0-systemd.patch
@@ -111,6 +111,9 @@ make check
 %{_mandir}/man8/*8*
 
 %changelog
+* Tue May 10 2022 yaoxin <yaoxin30@h-partners.com> - 3.8.0-9
+- License compliance rectification
+
 * Tue Sep 15 2020 Ge Wang <wangge20@huawei.com> - 3.8.0-7
 - Modify Source0 Url
 
